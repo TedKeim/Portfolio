@@ -15,17 +15,18 @@ box-sizing: border-box;
     background-repeat: no-repeat;
 }
 
-h1 {
+.name-picture {
     font-size: 5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border: 3px solid #fff;
-    position: absolute;
-    top: 35%;
-    left: 50%;
+    position: relative;
+    top: 40%;
+    left: 76%;
     transform: translate(-50%, -50%);
     padding: 5rem 10rem;
+    font-family: 'Roboto', sans-serif;
 }
+
 
 @keyframes change {
     0%{
@@ -40,7 +41,7 @@ h1 {
 }
 
 #about-me {
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(152 149 149 / 58%);
     width: 100%;
     height: 100vh;
 }
@@ -76,6 +77,7 @@ h1 {
 .col-sm-8 {
     position: relative;
     float: right;
+    border: solid 5px #ffff;
 }
 
 .col-sm-4 {
@@ -86,3 +88,103 @@ h1 {
 h2 {
     padding-top: 20px;
 }
+
+ .hamburger1 {
+   height: 45px;
+   display: -ms-grid;
+   display: grid;
+   grid-template-rows: repeat(3, 1fr);
+   justify-items: center;
+   z-index: 120;
+ }
+ 
+ .hamburger1 div {
+   background-color: rgb(61, 61, 61);
+   position: relative;
+   width: 40px;
+   height: 5px;
+   margin-top: 7px;
+   -webkit-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+ }
+
+ #toggle1 {
+    display: none;
+  }
+  
+  #toggle1:checked + .hamburger1 .top {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    margin-top: 22.5px;
+  }
+  
+  #toggle1:checked + .hamburger1 .meat {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top: -5px;
+  }
+  
+  #toggle1:checked + .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  
+  #toggle1:checked ~ .menu1 {
+    height: 340px;
+  }
+  
+  .menu1 {
+    width: 100%;
+    background-color: rgb(61, 61, 61);
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: 1fr repeat(4, 0.5fr);
+    grid-row-gap: 25px;
+    padding: 0;
+    list-style: none;
+    clear: both;
+    width: auto;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  .menu1 a:first-child {
+    margin-top: 40px;
+  }
+  
+  .menu1 a:last-child {
+    margin-bottom: 40px;
+  }
+  
+  .link1 {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    font: 700 20px 'Oswald', sans-serif;
+  }
+  
+  .link1:hover {
+    background-color: #fff;
+    color: rgb(61, 61, 61);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  p {
+    font-size: calc(1.375rem + 1.5vw);;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  h1 {
+      position: relative;
+      left: 7%;
+      
+  }

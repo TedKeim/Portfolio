@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.gradient {
+    background: radial-gradient(rgb(20, 49, 77), rgb(5, 7, 15));
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.languages {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.list {
+    color: rgb(255, 255, 255);
+    margin-left: 45px;
+    font-size: 20px;
+}
+
+.projects {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+.link1 {
+    color: rgb(255, 255, 255);
+}
+
+.project1 {
+    height: 420px;
+    width: 420px;
+}
+
+.fighter-stats {
+    float: left;
+}
+
+.quiz {
+    height: 420px;
+    width: 420px;
+}
+
+.code-quiz {
+    margin-right: 390px;
+}
+
+.dayPlanner {
+    float: right;
+    margin-top: -540px;
+}
+.planner {
+    height: 420px;
+    width: 420px;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+#projectsBtn {
+    margin-left: 45%;
+    height: 100px;
+    width: 200px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 0.6em;
+    color: rgb(79, 160, 192);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+}
+
+#projectsBtn:hover, #projectsBtn:focus {
+    color: #fff;
+    outline: 0;
+    background-color: rgb(79, 160, 192);
+}
