@@ -1,7 +1,12 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 .intro {
@@ -41,7 +46,7 @@ box-sizing: border-box;
 }
 
 #about-me {
-    background-color: rgb(152 149 149 / 58%);
+    /* background-color: rgb(152 149 149 / 58%); */
     width: 100%;
     height: 100vh;
 }
@@ -78,6 +83,7 @@ box-sizing: border-box;
     position: relative;
     float: right;
     border: solid 5px #ffff;
+    padding: 20px;
 }
 
 .col-sm-4 {
@@ -188,3 +194,12 @@ h2 {
       left: 7%;
       
   }
+
+  .gradient {
+    background: radial-gradient(rgb(226, 226, 226), rgb(214, 214, 214)) ;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
